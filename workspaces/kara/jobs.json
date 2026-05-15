@@ -1,0 +1,179 @@
+{
+  "jobs": [
+    {
+      "dispatch": {
+        "channel": "telegram",
+        "meta": {},
+        "mode": "final",
+        "target": {
+          "session_id": "telegram:-XXXXXXXXXX",
+          "user_id": "XXXXXXXXXX"
+        },
+        "type": "channel"
+      },
+      "enabled": true,
+      "id": "a368a3c9-8e04-4c5c-b9a0-f56e275bbea6",
+      "meta": {},
+      "name": "Bangunin Fara",
+      "request": null,
+      "runtime": {
+        "max_concurrency": 1,
+        "misfire_grace_seconds": 60,
+        "share_session": true,
+        "timeout_seconds": 120
+      },
+      "save_result_to_inbox": false,
+      "schedule": {
+        "cron": "0 4 * * mon-fri",
+        "repeat_count": null,
+        "repeat_end_type": null,
+        "repeat_every_days": null,
+        "repeat_until": null,
+        "run_at": null,
+        "timezone": "Asia/Jakarta",
+        "type": "cron"
+      },
+      "task_type": "text",
+      "text": "🌅 Selamat pagi, Fara! Jam 4 pagi nih, waktunya bangun! Semangat sekolah hari ini~ 💪📚"
+    },
+    {
+      "dispatch": {
+        "channel": "telegram",
+        "meta": {},
+        "mode": "final",
+        "target": {
+          "session_id": "telegram:-XXXXXXXXXX",
+          "user_id": "XXXXXXXXXX"
+        },
+        "type": "channel"
+      },
+      "enabled": true,
+      "id": "cacc54d0-475d-4911-a2b6-8741c65aa3aa",
+      "meta": {},
+      "name": "Reminder Jadwal & Buku",
+      "request": {
+        "input": [
+          {
+            "content": [
+              {
+                "text": "Apa jadwal pelajaran Fara hari ini dan buku apa saja yang harus dibawa? Tolong ingatkan dengan detail!",
+                "type": "text"
+              }
+            ],
+            "role": "user",
+            "type": "message"
+          }
+        ],
+        "session_id": "telegram:-XXXXXXXXXX",
+        "user_id": "XXXXXXXXXX"
+      },
+      "runtime": {
+        "max_concurrency": 1,
+        "misfire_grace_seconds": 60,
+        "share_session": true,
+        "timeout_seconds": 120
+      },
+      "save_result_to_inbox": true,
+      "schedule": {
+        "cron": "30 4 * * mon-fri",
+        "repeat_count": null,
+        "repeat_end_type": null,
+        "repeat_every_days": null,
+        "repeat_until": null,
+        "run_at": null,
+        "timezone": "Asia/Jakarta",
+        "type": "cron"
+      },
+      "task_type": "agent",
+      "text": null
+    },
+    {
+      "dispatch": {
+        "channel": "telegram",
+        "meta": {},
+        "mode": "final",
+        "target": {
+          "session_id": "telegram:-XXXXXXXXXX",
+          "user_id": "XXXXXXXXXX"
+        },
+        "type": "channel"
+      },
+      "enabled": true,
+      "id": "f05719d5-a5f0-49ec-ad5a-7cb76a64fb4a",
+      "meta": {},
+      "name": "Cek PR Sepulang Sekolah",
+      "request": null,
+      "runtime": {
+        "max_concurrency": 1,
+        "misfire_grace_seconds": 60,
+        "share_session": true,
+        "timeout_seconds": 120
+      },
+      "save_result_to_inbox": false,
+      "schedule": {
+        "cron": "0 16 * * mon-fri",
+        "repeat_count": null,
+        "repeat_end_type": null,
+        "repeat_every_days": null,
+        "repeat_until": null,
+        "run_at": null,
+        "timezone": "Asia/Jakarta",
+        "type": "cron"
+      },
+      "task_type": "text",
+      "text": "🏡 Halo Fara! Udah pulang sekolah nih~ Ada PR hari ini? Coba ceritain ya, pelajaran apa aja, deadline-nya kapan? Biar aku catet dan bantuin nanti~ 😊📝"
+    },
+    {
+      "dispatch": {
+        "channel": "telegram",
+        "meta": {},
+        "mode": "final",
+        "target": {
+          "session_id": "telegram:-XXXXXXXXXX",
+          "user_id": "XXXXXXXXXX"
+        },
+        "type": "channel"
+      },
+      "enabled": true,
+      "id": "5af88fe1-ab43-4a0f-84e6-e0691005259e",
+      "meta": {},
+      "name": "Reminder PR & Belajar Malam",
+      "request": {
+        "input": [
+          {
+            "content": [
+              {
+                "text": "Ini reminder malam untuk Fara. Cek dulu apakah ada PR yang belum selesai dikerjakan? Apa deadline-nya? Kalau masih ada PR, bantu Fara mengerjakannya. Kalau tidak ada PR, tawarkan Fara untuk belajar pelajaran besok.",
+                "type": "text"
+              }
+            ],
+            "role": "user",
+            "type": "message"
+          }
+        ],
+        "session_id": "telegram:-XXXXXXXXXX",
+        "user_id": "XXXXXXXXXX"
+      },
+      "runtime": {
+        "max_concurrency": 1,
+        "misfire_grace_seconds": 60,
+        "share_session": true,
+        "timeout_seconds": 120
+      },
+      "save_result_to_inbox": true,
+      "schedule": {
+        "cron": "0 19 * * *",
+        "repeat_count": null,
+        "repeat_end_type": null,
+        "repeat_every_days": null,
+        "repeat_until": null,
+        "run_at": null,
+        "timezone": "Asia/Jakarta",
+        "type": "cron"
+      },
+      "task_type": "agent",
+      "text": null
+    }
+  ],
+  "version": 1
+}
